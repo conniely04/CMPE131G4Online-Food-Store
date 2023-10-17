@@ -1,46 +1,36 @@
-import React from "react";
-import { useEffect, useState } from "react";
-
-function Header() {
-  const [isSticky, setIsSticky] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  return (
-    <header className={isSticky ? "fixed-header" : ""}>
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+export default function Header() {
+  <html>
+    <head>
       <link
         href="https://fonts.googleapis.com/css?family=Cabin"
         rel="stylesheet"
       ></link>
-      <nav>
-        <div className="logo">Online Food Store</div>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </head>
+  </html>;
+  return (
+    <nav className="navbar">
+      <Link to="/" className="logo">
+        Online Food Store
+      </Link>
+      <ul>
+        <CustomLink to="/Home">Home</CustomLink>
+        <CustomLink to="/About">About</CustomLink>
+        <CustomLink to="/Login">Login</CustomLink>
+        <CustomLink to="/Contact">Contact</CustomLink>
+      </ul>
+    </nav>
   );
 }
 
-export default Header;
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  return (
+    <li className={isActive ? " active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  );
+}
