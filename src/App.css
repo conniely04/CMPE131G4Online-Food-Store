@@ -122,3 +122,82 @@ a:hover {
   padding: 20px;
   color: white;
 }
+
+
+/* ItemDetail.css */
+.item-detail {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 1;    
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.image-container img {
+  width: 140%;
+  height: 140%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px; /* Optional: add rounded corners to the image */
+}
+
+.details-container {
+  flex: 1; /* Set to 1 to take up remaining space */
+  display: flex;
+  flex-direction: column; /* Arrange the details vertically */
+  margin-left: 10px; 
+}
+
+h3 {
+  font-size: 70px; /* Set the font size for the item name */
+  margin-bottom: 5px; /* Reduce the margin */
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 5px; /* Reduce the margin */
+}
+
+.weight {
+  margin-bottom: 5px; /* Reduce the margin */
+}
+
+.description {
+  margin-bottom: 10px; /* Keep a slightly larger margin for description */
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Reduce the margin */
+  margin-left: 100px;
+}
+
+.quantity-container button {
+  background-color: red;
+  border: 0;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.quantity {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.add-to-cart-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
