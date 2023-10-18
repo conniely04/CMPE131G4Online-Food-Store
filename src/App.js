@@ -30,7 +30,6 @@ function App() {
         <Route path="/Banana" element={<Banana />} />
         <Route path="/Carrot" element={<Carrot />} />
       </Routes>
-      <Carrot />
     </div>
   );
 }
