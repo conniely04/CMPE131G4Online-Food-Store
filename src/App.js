@@ -6,14 +6,20 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
-import Broccoli from "./pages/Broccoli"
+import Broccoli from "./pages/Broccoli";
 import Banana from "./pages/Banana";
-import Carrot from "./pages/Carrot"
+import Carrot from "./pages/Carrot";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Cabin"
+          rel="stylesheet"
+        ></link>
+      </head>
       <Header />
       <Routes>
         <Route path="/About" element={<About />} />
@@ -24,6 +30,7 @@ function App() {
         <Route path="/Banana" element={<Banana />} />
         <Route path="/Carrot" element={<Carrot />} />
       </Routes>
+      <Carrot />
     </div>
   );
 }

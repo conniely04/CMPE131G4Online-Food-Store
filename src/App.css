@@ -123,7 +123,6 @@ a:hover {
   color: white;
 }
 
-
 /* ItemDetail.css */
 .item-detail {
   display: flex;
@@ -133,7 +132,7 @@ a:hover {
 }
 
 .image-container {
-  flex: 1;    
+  flex: 1;
   margin-right: 200px;
   margin-top: 50px;
 }
@@ -150,7 +149,7 @@ a:hover {
   flex: 1; /* Set to 1 to take up remaining space */
   display: flex;
   flex-direction: column; /* Arrange the details vertically */
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
 h3 {
@@ -179,7 +178,8 @@ h3 {
 }
 
 .quantity-container button {
-  background-color: red;
+  background-color: white;
+  color: rgb(4, 73, 39);
   border: 0;
   padding: 5px 10px;
   margin: 0 5px;
@@ -193,7 +193,8 @@ h3 {
 }
 
 .add-to-cart-button {
-  background-color: red;
+  background-color: rgb(4, 73, 39);
+  font-weight: bold;
   color: white;
   padding: 10px;
   border: none;
