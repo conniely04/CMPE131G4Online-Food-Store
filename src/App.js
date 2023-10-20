@@ -15,6 +15,7 @@ import Navbar from "./Components/Navbar";
 import "./Components/Navbar.css";
 import BrowsingPage from "./pages/BrowsingPage";
 import "./BrowsingPage.css";
+import ShoppingCartPage from "./pages/ShoppingCart";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/Broccoli" element={<Broccoli />} />
         <Route path="/Banana" element={<Banana />} />
         <Route path="/Carrot" element={<Carrot />} />
+        <Route path="/ShoppingCart" element={<ShoppingCartPage />} />
       </Routes>
     </div>
   );
