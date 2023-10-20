@@ -1,0 +1,51 @@
+/* CategoryItems.css */
+.category-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 25px; /* Adjust the gap between items as needed */
+}
+
+.item-box {
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  padding: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.item-image {
+  flex: 1; /* Image takes up most of the space in the box */
+  margin: 0 auto;
+  max-width: 100%; /* Adjust the maximum width to fill the box */
+  object-fit: cover; /* Ensure the image fills the available space */
+}
+
+.item-line {
+  border: 0;
+  border-top: 1px solid #ccc;
+  width: 80%;
+  margin: 10px 0; /* Adjust the space between image and item name */
+}
+
+.item-name {
+  flex: 0.15; /* Item name and price take 30% of the space on the bottom */
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.item-price {
+  flex: 0.15; /* Item name and price take 30% of the space on the bottom */
+  font-size: 14px;
+  text-align: center;
+  color: #106f10; /* Adjust the color for the price text */
+  margin: 0;
+}
