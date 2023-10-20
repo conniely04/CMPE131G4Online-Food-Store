@@ -20,11 +20,19 @@ export default function Header() {
           onKeyDown={handleSearch}
         />
       </div>
+      <div className="sign-in-shopping-cart">
+        <img
+          src="/cart.png"
+          alt="Shopping Cart"
+          className="shopping-cart-icon"
+        />
+      </div>
       <ul>
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/About">About</CustomLink>
         <CustomLink to="/Login">Login</CustomLink>
         <CustomLink to="/Contact">Contact</CustomLink>
+        <CustomLink to="/ShoppingCart">Cart</CustomLink>
       </ul>
     </nav>
   );

@@ -25,3 +25,4 @@ export default function LoginPage() {
     </div>
   );
 }
+//take user address during registration

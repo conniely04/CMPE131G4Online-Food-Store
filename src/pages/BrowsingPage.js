@@ -5,7 +5,7 @@ import "../Components/CategoryItems.css";
 const BrowsingPage = () => {
   const categoriesData = [
     { id: 1, name: "Pantry staples", image: "pantry.png" },
-    { id: 2, name: "Vegetables", image: "broccoli.png" },
+    { id: 2, name: "Vegetables", image: "broccoli2.png" },
     { id: 3, name: "Fruits", image: "orange.png" },
     { id: 4, name: "Proteins", image: "meat.png" },
     { id: 5, name: "Grains", image: "wheat.png" },

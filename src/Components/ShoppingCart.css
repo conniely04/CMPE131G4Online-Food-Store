@@ -8,6 +8,7 @@
   border: 1px solid #ccc; /* Adds a 1px solid border with light gray color */
   border-radius: 5px; /* Adds rounded corners with a 5px radius */
   width: 150%; /* Makes it 50% wider than its parent */
+  height: 300px;
 }
 
 /* Shopping Cart Header */
@@ -101,6 +102,9 @@
   padding: 20px; /* Adds padding inside the summary box */
   text-align: center; /* Centers text inside the summary box */
   margin-top: 20px; /* Adds top margin to the summary box */
+  position: relative; /* or absolute */
+  top: 85px;
+  left: 25px;
 }
 
 .summary-box h1 {
