@@ -13,6 +13,13 @@ export default function Header() {
       <Link to="/" className="logo">
         Online Food Store
       </Link>
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search for products"
+          onKeyDown={handleSearch}
+        />
+      </div>
       <ul>
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/About">About</CustomLink>
@@ -34,3 +41,10 @@ function CustomLink({ to, children, ...props }) {
     </li>
   );
 }
+
+const handleSearch = (e) => {
+  if (e.key === "Enter") {
+    // Redirect or trigger a search action here
+    console.log("Performing search for:", e.target.value);
+  }
+};
