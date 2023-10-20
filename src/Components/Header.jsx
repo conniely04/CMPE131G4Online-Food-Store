@@ -14,7 +14,7 @@ export default function Header() {
         Online Food Store
       </Link>
       <ul>
-        <CustomLink to="/Home">Home</CustomLink>
+        <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/About">About</CustomLink>
         <CustomLink to="/Login">Login</CustomLink>
         <CustomLink to="/Contact">Contact</CustomLink>
