@@ -1,4 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+
 export default function Header() {
   <html>
     <head>
@@ -20,20 +21,23 @@ export default function Header() {
           onKeyDown={handleSearch}
         />
       </div>
-      <div className="sign-in-shopping-cart">
-        <img
-          src="/cart.png"
-          alt="Shopping Cart"
-          className="shopping-cart-icon"
-        />
-      </div>
-      <ul>
+
+      <ul className="navigation-links">
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/About">About</CustomLink>
         <CustomLink to="/Login">Login</CustomLink>
         <CustomLink to="/Contact">Contact</CustomLink>
-        <CustomLink to="/ShoppingCart">Cart</CustomLink>
+        <li className="shopping-cart">
+          <CustomLink to="/ShoppingCart">
+            <img
+              src="/cart.png"
+              alt="Shopping Cart"
+              className="shopping-cart-icon"
+            />
+          </CustomLink>
+        </li>
       </ul>
+
     </nav>
   );
 }

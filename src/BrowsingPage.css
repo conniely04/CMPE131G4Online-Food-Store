@@ -62,12 +62,12 @@
 
 .left-arrow {
   position: absolute;
-  left: 290px;
+  left: 200px;
 }
 
 .right-arrow {
   position: absolute;
-  right: 290px;
+  right: 200px;
 }
 
 .scroll-arrow img {
@@ -88,7 +88,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f4f4f4; /* Set the background color */
-  height: 60vh; /* Adjust the height as needed (e.g., 30% of the viewport height) */
+  height: 55vh; /* Adjust the height as needed (e.g., 30% of the viewport height) */
   margin-bottom: 20px; /* Add margin to create a gap */
 }
 
