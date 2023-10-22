@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import ShoppingCart from "../Components/ShoppingCart";
-
+import "../Components/ShoppingCart.css";
 function ShoppingCartPage() {
   const [cart, setCart] = useState([
     {

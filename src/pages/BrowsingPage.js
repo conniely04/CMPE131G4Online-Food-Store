@@ -36,7 +36,14 @@ const BrowsingPage = () => {
 
   return (
     //image-banner
-    <div>
+
+    <div className="whole-page">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Cabin"
+          rel="stylesheet"
+        ></link>
+      </head>
       <div className="image-banner">
         <img src="/Frame.png" alt="Shop Now" className="banner-image" />
       </div>
@@ -82,3 +89,6 @@ const BrowsingPage = () => {
 };
 
 export default BrowsingPage;
+
+//changes search bar no border
+//change font to mstch

@@ -1,10 +1,19 @@
 /* CategoryList.css */
+.whole-page {
+  margin-top: 50px;
+}
+.BrowsingPage {
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
 .category-list-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  font-family: "Cabin";
 }
 
 .category-list-container-inner {
@@ -13,6 +22,7 @@
   max-width: 80%;
   overflow: hidden;
   position: relative;
+  font-family: "Cabin";
 }
 
 .category-list {
@@ -21,6 +31,7 @@
   max-width: 100%;
   overflow: hidden;
   position: relative;
+  font-family: "Cabin";
 }
 
 .category-box {
@@ -61,13 +72,19 @@
 }
 
 .left-arrow {
+  overflow: hidden;
   position: absolute;
   left: 200px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .right-arrow {
+  overflow: hidden;
   position: absolute;
   right: 200px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .scroll-arrow img {

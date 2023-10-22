@@ -1,55 +1,9 @@
-.logo {
-  padding-left: 26px;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-ul {
-  padding-right: 30px;
-  list-style: none;
-  display: flex;
-  gap: 45px;
-  text-decoration: none;
-  justify-content: center;
-}
-
-li {
-  font-size: 18px;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(144, 189, 158);
-  font-weight: bold;
-}
-
-.navbar {
-  box-sizing: border-box;
-  width: 100%;
-  background-color: #5b7860;
-  color: rgb(14, 74, 33);
+.App {
   font-family: "Cabin";
-  display: flex;
-  align-items: center;
-  height: 65px; /* Adjust the height as needed */
-  padding: 0 20px; /* Adjust the horizontal padding */
-}
-
-.navigation-links {
-  display: flex;
-  align-items: center; /* Align items vertically */
-}
-
-/* Add any additional styles you need for the navigation links */
-.navigation-links li {
-  margin-right: 5px; /* Adjust the spacing between links */
-}
-
-.shopping-cart {
-  margin-left: auto; /* Push the cart to the right */
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
 }
 
 /*ItemDetail.css  */
