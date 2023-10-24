@@ -1,5 +1,7 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom'; // Import Link from React Router
+import ShoppingCart from '../pages/ShoppingCart';
 
 const Navbar = () => {
   // Function to handle search when the user presses Enter
@@ -24,7 +26,9 @@ const Navbar = () => {
         </div>
         <div className="sign-in-shopping-cart">
           <button className="sign-in-button">Sign In</button>
-          <img src="/cart.png" alt="Shopping Cart" className="shopping-cart-icon" />
+          <Link to="/cart" element={<ShoppingCart/>}>
+            <img src="/cart.png" alt="Shopping Cart" className="shopping-cart-icon" />
+          </Link>
         </div>
       </div>
     </div>

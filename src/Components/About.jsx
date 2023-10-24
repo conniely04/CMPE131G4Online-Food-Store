@@ -1,4 +1,5 @@
 import React from "react";
+import "../Components/Login.css";
 
 const About = () => {
   return (
@@ -10,17 +11,25 @@ const About = () => {
         ></link>
       </head>
       <h1 id="title">About Us</h1>
-      <p>
-        "OFS" (Online Food Store) aims to establish an online platform to
-        conveniently allow customers to purchase organic grocery items through a
-        digital payment process. OFS aims to serve customers located within
-        delivery distance around downtown San Jose. Customers should have a
-        pleasant shopping experience where they can see what grocery items are
-        available, add them to a virtual cart, have a secure payment process,
-        and receive their groceries delivered to their home.
-      </p>
-      <br></br>
-      <p>Website Developed By: Alan, Connie, Hiba, Tanya, Phuc, Rohan</p>
+      <div className="info">
+        <p>
+          "OFS" (Online Food Store) aims to establish an online platform to
+          <br></br>
+          conveniently allow customers to purchase organic grocery items through
+          a<br></br>
+          digital payment process. OFS aims to serve customers located within
+          <br></br>
+          delivery distance around downtown San Jose. Customers should have a
+          <br></br>
+          pleasant shopping experience where they can see what grocery items are
+          <br></br>
+          available, add them to a virtual cart, have a secure payment process,
+          <br></br>
+          and receive their groceries delivered to their home.
+        </p>
+        <br></br>
+        <p>Website Developed By: Alan, Connie, Hiba, Tanya, Phuc, Rohan</p>
+      </div>
     </div>
   );
 };

@@ -51,7 +51,9 @@ export const Register = (props) => {
           id="password"
           name="password"
         />
-        <button type="submit">Login</button>
+        <button className="loginbuttons" type="submit">
+          Register
+        </button>
       </form>
       <button
         className="link-button"

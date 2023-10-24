@@ -1,5 +1,6 @@
 import { Login } from "../Components/Login";
 import { Register } from "../Components/Register";
+import "../Components/Login.css";
 import React, { useState } from "react";
 
 export default function LoginPage() {
@@ -25,3 +26,4 @@ export default function LoginPage() {
     </div>
   );
 }
+//take user address during registration

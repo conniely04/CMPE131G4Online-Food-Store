@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Components/Login.css";
 
 export const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -40,7 +41,9 @@ export const Login = (props) => {
           id="password"
           name="password"
         />
-        <button type="submit">Login</button>
+        <button className="loginbuttons" type="submit">
+          Login
+        </button>
       </form>
       <button
         className="link-button"
