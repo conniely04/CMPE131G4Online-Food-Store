@@ -1,14 +1,14 @@
-import React from 'react';
-import './Navbar.css';
-import { Link } from 'react-router-dom'; // Import Link from React Router
-import ShoppingCart from '../pages/ShoppingCart';
+import React from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom"; // Import Link from React Router
+import ShoppingCartPage from "../pages/ShoppingCart";
 
 const Navbar = () => {
   // Function to handle search when the user presses Enter
   const handleSearch = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       // Redirect or trigger a search action here
-      console.log('Performing search for:', e.target.value);
+      console.log("Performing search for:", e.target.value);
     }
   };
 
@@ -26,8 +26,12 @@ const Navbar = () => {
         </div>
         <div className="sign-in-shopping-cart">
           <button className="sign-in-button">Sign In</button>
-          <Link to="/cart" element={<ShoppingCart/>}>
-            <img src="/cart.png" alt="Shopping Cart" className="shopping-cart-icon" />
+          <Link to="/cart" element={<ShoppingCartPage />}>
+            <img
+              src="/cart.png"
+              alt="Shopping Cart"
+              className="shopping-cart-icon"
+            />
           </Link>
         </div>
       </div>
