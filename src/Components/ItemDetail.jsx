@@ -1,15 +1,8 @@
-// ItemDetail.js
 import React, { useState } from 'react';
+import "../Components/ItemDetail.css";
 
-
-
-
-// this function will get the item detail as input
-function ItemDetail(item) {
-  const { name, price, description, weight, image} = item;
+function ItemDetail({ name, price, description, weight, image }) {
   const [quantity, setQuantity] = useState(0);
-
-  
 
   const handleIncreaseQuantity = () => {
     setQuantity(quantity + 1);
@@ -22,13 +15,10 @@ function ItemDetail(item) {
   };
 
   return (
-    <div className="item-detail">
-    <div className="image-container">
-    <img
-    loading="lazy"    
-    src = {image}
-  />
-    </div>
+    <div className="item-container">
+      <div className="image-container">
+        <img loading="lazy" src={image} alt={name} />
+      </div>
       <div className="details-container">
         <h3>{name}</h3>
         <p className="price"> {price} EACH </p>

@@ -2,6 +2,8 @@ import ItemDetail from "../Components/ItemDetail";
 import React from "react";
 
 export default function ItemInfo() {
+
+    // placeholder for backend info to be implemented later on
     const bananaiInfo = {
         name: 'Banana',
         price: '$1.99',
