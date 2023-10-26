@@ -104,7 +104,7 @@ function ShoppingCart({ cart, removeFromCart }) {
             ) : (
               <>
                 <p>
-                  Total Cost: $
+                  Subtotal: $
                   {cart
                     .reduce(
                       (total, item) => total + item.price * item.quantity,
@@ -118,7 +118,7 @@ function ShoppingCart({ cart, removeFromCart }) {
                   <p>Shipping Cost: ${shippingCost.toFixed(2)}</p>
                 )}
                 <p>
-                  Total Cost (including Tax and Shipping): $
+                  Total Cost (Tax & Shipping): $
                   {(
                     cart.reduce(
                       (total, item) => total + item.price * item.quantity,
@@ -127,6 +127,10 @@ function ShoppingCart({ cart, removeFromCart }) {
                     taxAmount +
                     (totalWeight > 20 ? shippingCost : 0)
                   ).toFixed(2)}
+                </p>
+                <p>
+                  {" "}
+                  <button className="checkout">Checkout</button>
                 </p>
               </>
             )}

@@ -22,7 +22,7 @@ function ShoppingCartPage() {
     {
       id: 3,
       name: "1 lb of Broccoli",
-      price: 1.99,
+      price: 1.5,
       quantity: 1,
       weight: 1.0,
       image: "/images/broccoli.png",

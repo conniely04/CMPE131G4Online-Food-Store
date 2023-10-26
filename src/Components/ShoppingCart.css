@@ -10,9 +10,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 60px;
-  margin-right: 50px;
+  margin-top: 69px;
+  margin-right: 0%;
   padding: 0 20px;
+}
+.divider {
+  margin-bottom: 0.5%;
+}
+.top-center {
+  margin-right: -5%;
 }
 
 .continue {
@@ -37,24 +43,29 @@ html {
   font-weight: bold;
   font-size: 0.7em;
   text-align: center;
+  margin-left: 100px;
 }
 
 .continue:hover {
   background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
 }
 
 .checkout:hover {
-  background-color: #d32f2f;
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
 }
 
 /* Product Card Styling */
 .cart-item {
   display: flex;
-  width: 95.7%; /* Set to 80% width */
+  width: 60%;
   border: 1px solid #e0e0e0;
   background-color: #fff;
   border-radius: 0;
-  margin: 2% 0;
+  margin: 0.5% 0;
   padding: 2%;
   box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
@@ -68,9 +79,9 @@ html {
 
 /* Zoom of the items */
 .cart-item img {
-  max-width: 20%;
-  max-height: 20%;
-  margin: 0 1% 0 0;
+  max-width: 10%;
+  max-height: 10%;
+  margin: 0 0 0 0; /* Adjust as needed */
 }
 
 /* + and - sign above remove sign */
@@ -87,17 +98,17 @@ html {
 
 /* Summary Box Styling */
 .summary-box {
-  display: flex;
-  flex-direction: column;
-  width: 95.7%; /* Set to 80% width */
+  position: fixed;
+  top: 154.5px;
+  right: 0.3%;
+  width: 33%;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 0;
-  padding: 2%;
+  padding: 1%;
   text-align: center;
-  margin-top: 2%;
-  align-items: center; /* Center contents horizontally */
-  position: sticky;
-  top: 20px; /* Adjust this value as needed */
-  z-index: 1; /* Ensure it's above other content when it becomes fixed */
+  z-index: 1;
+}
+.summary-box .checkout {
+  margin-right: 101px;
 }
