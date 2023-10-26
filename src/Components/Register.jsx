@@ -4,6 +4,7 @@ export const Register = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPass] = useState("");
   const [username, setName] = useState("");
+  const [phone, setPhone] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -50,6 +51,16 @@ export const Register = (props) => {
           placeholder="********"
           id="password"
           name="password"
+        />
+
+        <label htmlFor="phone">Phone Number</label>
+        <input
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          type="phone"
+          placeholder="000-000-0000"
+          id="phone"
+          name="phone"
         />
         <button className="loginbuttons" type="submit">
           Register
