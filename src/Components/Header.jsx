@@ -36,12 +36,16 @@ export default function Header() {
               <CustomLink className="contentin" to="/">
                 Home
               </CustomLink>
-              <CustomLink className="contentin" to="/About">
-                About
-              </CustomLink>
               <CustomLink className="contentin" to="/Login">
                 Login
               </CustomLink>
+              <CustomLink className="contentin" to="/Order">
+                Orders
+              </CustomLink>
+              <CustomLink className="contentin" to="/About">
+                About
+              </CustomLink>
+
               <CustomLink className="contentin" to="/Contact">
                 Contact
               </CustomLink>

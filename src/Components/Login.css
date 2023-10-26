@@ -61,8 +61,8 @@ input {
 
 .link-button {
   padding-top: 15px;
+  text-decoration: underline;
   border: none;
-  text-decoration: none;
   background: none;
   cursor: pointer;
   color: #005823;

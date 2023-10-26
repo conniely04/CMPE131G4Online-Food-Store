@@ -1,5 +1,6 @@
 import React from "react";
 import "./ShoppingCart.css";
+import { Link } from "react-router-dom";
 
 function ShoppingCart({ cart, removeFromCart }) {
   const handleIncrement = (itemId) => {
@@ -62,7 +63,9 @@ function ShoppingCart({ cart, removeFromCart }) {
     <div className="shopping-cart-page">
       <div className="top-half">
         <div className="top-left">
-          <button className="continue">Continue Shopping</button>
+          <Link to="/">
+            <button className="continue">Continue Shopping</button>
+          </Link>
         </div>
         <div className="top-center">
           <h2>Items ({totalItems})</h2>
