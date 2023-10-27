@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import CategoryItems from '../Components/CategoryItems'; // Import the CategoryItems component
 import '../Components/CategoryItems.css';
+import Header from '../Components/Header'; // Correct import path
+import CategoryItem from '../Components/CategoryItems'; // Correct import path
 
 const BrowsingPage = () => {
+  const [cart, setCart] = useState([]);
   const categoriesData = [
     { id: 1, name: 'Pantry staples', image: 'pantry.png' },
     { id: 2, name: 'Vegetables', image: 'broccoli2.png' },
@@ -37,6 +39,7 @@ const BrowsingPage = () => {
 
   return (
     <div className="browsing-page">
+       <Header cart={cart} /> {/* Add this line to render the header */}
       <div className="background-gradient"></div> {/* New background gradient */}
      
       {/* image banner */}
@@ -55,9 +58,7 @@ const BrowsingPage = () => {
             .map((category) => (
               <div
                 key={category.id}
-                className={`category-box ${
-                  selectedCategory === category.name ? 'selected' : ''
-                }`}
+                className={`category-box ${selectedCategory === category.name ? 'selected' : ''}`}
                 onClick={() => handleCategoryClick(category.name)}
               >
                 <img
@@ -76,7 +77,7 @@ const BrowsingPage = () => {
 
       <div className="category-line"></div> {/* Add this line to separate the category section from category items */}
       
-      <CategoryItems selectedCategory={selectedCategory} />
+      <CategoryItem selectedCategory={selectedCategory} cart={cart} setCart={setCart} />
     </div>
   );
 };
