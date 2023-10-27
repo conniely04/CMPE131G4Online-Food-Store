@@ -154,7 +154,7 @@ const CategoryItem = ({ selectedCategory, cart, setCart }) => {
           className={`item-box ${selectedItem === item ? 'selected' : ''}`}
           onClick={() => handleItemClick(item)}
         >
-          <div className="item-image" style={{ backgroundImage: `url('/food images/${item.image}')` }}></div>
+          <div className="item-image" style={{ backgroundImage: `url('/foodImages/${item.image}')` }}></div>
           <div className="item-line"></div>
           <p className="item-name">{item.name}</p>
           <div className="item-count">
