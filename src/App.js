@@ -10,6 +10,7 @@ import LoginPage from "./pages/LoginPage";
 import Broccoli from "./pages/Broccoli";
 import Banana from "./pages/Banana";
 import Carrot from "./pages/Carrot";
+import Checkout from "./Components/Checkout";
 
 import "./Components/Navbar.css";
 import BrowsingPage from "./pages/BrowsingPage";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/Banana" element={<Banana />} />
         <Route path="/Carrot" element={<Carrot />} />
         <Route path="/ShoppingCart" element={<ShoppingCartPage />} />
+        <Route path="/Checkout" element={<Checkout />} />
       </Routes>
     </div>
   );
