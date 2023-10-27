@@ -71,7 +71,9 @@ function ShoppingCart({ cart, removeFromCart }) {
           <h2>Items ({totalItems})</h2>
         </div>
         <div className="top-right">
-          <button className="checkout">Checkout</button>
+          <Link to="/Checkout">
+            <button className="checkout">Checkout</button>
+          </Link>
         </div>
       </div>
       <hr className="divider" />
@@ -133,7 +135,9 @@ function ShoppingCart({ cart, removeFromCart }) {
                 </p>
                 <p>
                   {" "}
-                  <button className="checkout">Checkout</button>
+                  <Link to="/Checkout">
+                    <button className="checkout">Checkout</button>
+                  </Link>
                 </p>
               </>
             )}
