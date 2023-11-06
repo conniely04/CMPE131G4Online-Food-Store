@@ -16,6 +16,7 @@ import "./Components/Navbar.css";
 import BrowsingPage from "./pages/BrowsingPage";
 import "./BrowsingPage.css";
 import ShoppingCartPage from "./pages/ShoppingCart";
+import TrackingPage from "./pages/TrackingPage";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/Carrot" element={<Carrot />} />
         <Route path="/ShoppingCart" element={<ShoppingCartPage />} />
         <Route path="/Checkout" element={<Checkout />} />
+        <Route path="/Tracking" element={<TrackingPage />} />
       </Routes>
     </div>
   );
