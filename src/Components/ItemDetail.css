@@ -1,83 +1,328 @@
-.item-container {
+/* Reset some default browser styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Position "Continue Shopping" and "Checkout" relative to cart items */
+.top-half {
   display: flex;
   align-items: center;
-}
-
-.image-container {
-  flex: 0 0 50%;
-}
-
-.details-container {
-  flex: 1;
+  justify-content: space-between;
+  margin-top: 69px;
+  margin-right: 0%;
   padding: 0 20px;
-  display: flex;
-  flex-direction: column;
 }
 
-.image-container img {
-  width: 70%; /* Ensure the image takes up 100% of the container width */
-  height: 70%; /* Set a fixed height for all images, adjust as needed */
-  margin-top: 100px;
-  object-fit: cover;
+.top-center {
+  margin-right: -5%;
+}
+
+.continue {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.checkout {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
   margin-left: 100px;
 }
 
-.quantity-container {
+.continue:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+.checkout:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Order Item Styling */
+.order-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(4, 73, 39); /* Add a green border */
+  background-color: #fff;
+  border-radius: 10px; /* Round out the edges */
+  margin: 0.5% 1px;
+  padding: 2%;
+  box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 1%;
+}
+
+.order-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Item Details Styling */
+.item-details {
+  width: 100%;
+}
+
+.item-details .item-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.item-details .item-price {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Item Actions Styling */
+.item-actions {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* Add any other styles as needed for your application */
-.price {
-  font-weight: bold;
-  margin-bottom: 5px;
+.item-actions input {
+  width: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  margin-right: 10px;
 }
 
-.weight {
-  margin-bottom: 5px;
-}
-
-.description {
-  margin-bottom: 10px;
-  overflow: hidden;
-  text-overflow: ellipsis; /* Show ellipsis (...) for text overflow */
-  white-space: nowrap
-}
-
-.add-to-cart-button {
-  background-color: rgb(4, 73, 39);
-  font-weight: bold;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  max-width: fit-content;
-}
-
-.quantity-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px; 
-
-}  
-
-.quantity-container button {
-  background-color: white;
-  color: rgb(4, 73, 39);
-  border: 0;
+.item-actions button {
+  background-color: #000000;
+  color: #ffffff;
   padding: 5px 10px;
-  margin: 0 5px;
+  border: none;
   cursor: pointer;
-  border-radius: 50%;
-} 
- .quantity {
-  margin: 0 10px;
-  font-size: 16px;
-} 
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+}
 
-h3 {
-  font-size: 70px; 
-   margin-bottom: 5px; 
-}  
+.item-actions button:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Summary Box Styling */
+.summary-box {
+  /* Reset some default browser styles */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Position "Continue Shopping" and "Checkout" relative to cart items */
+  .top-half {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 69px;
+    margin-right: 0%;
+    padding: 0 20px;
+  }
+
+  .top-center {
+    margin-right: -5%;
+  }
+
+  .continue {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 0.7em;
+    text-align: center;
+  }
+
+  .checkout {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 0.7em;
+    text-align: center;
+    margin-left: 100px;
+  }
+
+  .continue:hover {
+    background-color: #4cb71e;
+    transform: scale(1.02);
+    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+  }
+
+  .checkout:hover {
+    background-color: #4cb71e;
+    transform: scale(1.02);
+    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+  }
+
+  /* Order Item Styling */
+  .order-item {
+    display: flex;
+    width: 100%;
+    border: 1px solid rgb(4, 73, 39); /* Add a green border */
+    background-color: #fff;
+    border-radius: 10px; /* Round out the edges */
+    margin: 0.5% 1px;
+    padding: 2%;
+    box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 1%;
+  }
+
+  .order-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+  }
+
+  /* Item Details Styling */
+  .item-details {
+    width: 100%;
+  }
+
+  .item-details .item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+
+  .item-details .item-price {
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  /* Item Actions Styling */
+  .item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .item-actions input {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    margin-right: 10px;
+  }
+
+  .item-actions button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+
+  .item-actions button:hover {
+    background-color: #4cb71e;
+    transform: scale(1.02);
+    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+  }
+
+  /* Summary Box Styling (Removed for order summary) */
+
+  /* Billing Information Styling */
+  .billing-info {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+  }
+
+  .billing-info label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .billing-info input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+
+  /* Adjusting for small screens */
+  @media (max-width: 50%) {
+    /* Adjust the zoom level for the entire page */
+    body,
+    html {
+      zoom: 0.5; /* Set the zoom level to 50% */
+    }
+
+    /* Reset specific styles that don't need to be scaled */
+    /* For example, reset the zoom on specific elements like buttons or certain text */
+    .continue,
+    .checkout,
+    .item-actions input,
+    .item-actions button {
+      transform: scale(2); /* Counteract the page zoom for these elements */
+    }
+  }
+
+  position: fixed;
+  top: 154.5px;
+  right: 0.3%;
+  width: 33%;
+  background-color: #f0f0f0;
+  border: 1px solid rgb(4, 73, 39); /* Add a green border */
+  border-radius: 10px; /* Round out the edges */
+  padding: 1%;
+  text-align: center;
+  z-index: 1;
+}
+
+.summary-box .checkout {
+  margin-right: 101px;
+}
+
+@media (max-width: 50%) {
+  /* Adjust the zoom level for the entire page */
+  body,
+  html {
+    zoom: 0.5; /* Set the zoom level to 50% */
+  }
+
+  /* Reset specific styles that don't need to be scaled */
+  /* For example, reset the zoom on specific elements like buttons or certain text */
+  .continue,
+  .checkout,
+  .item-actions input,
+  .item-actions button {
+    transform: scale(2); /* Counteract the page zoom for these elements */
+  }
+}

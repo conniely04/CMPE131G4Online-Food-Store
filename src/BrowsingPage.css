@@ -51,7 +51,7 @@
 .category-box {
   flex: 0 0 auto;
   text-align: center;
-  border: 2px solid #005823;
+  border: 2px solid #5b7860;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -70,6 +70,10 @@
 .category-box:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.category-box.selected {
+  background-color: #d1e9c5;
 }
 
 .category-image {
@@ -102,6 +106,7 @@
   position: flexible;
   right: 70%; /* Adjusted position to bring the right arrow closer */
 }
+
 .scroll-arrow img {
   max-width: 40px;
 }
