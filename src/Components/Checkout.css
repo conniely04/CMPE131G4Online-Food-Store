@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 /* Styling for the Checkout Page */
 .checkout {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-=======
+}
 /* CheckoutPage.css */
 /* CheckoutPage.css */
 .checkout-page {
@@ -16,8 +15,6 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Rest of your CSS code... */
 
 /* Section Headers */
 .checkout-section {
@@ -116,5 +113,4 @@
 /* Place Order Section */
 .place-order {
   text-align: center; /* Center align the "Place Order" button */
->>>>>>> refs/remotes/origin/main
 }
