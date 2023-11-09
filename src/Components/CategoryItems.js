@@ -344,7 +344,6 @@ const CategoryItem = ({ selectedCategory, cart, setCart }) => {
       },
     ],
     "Sea Food": [
-<<<<<<< HEAD
       { id: 1, name: "Tuna", image: "tuna.png", price: "$7.99 per pound" },
       { id: 2, name: "Cod", image: "cod.png", price: "$8.99 per pound" },
       { id: 3, name: "Shrimp", image: "shrimp.png", price: "$9.99 per pound" },
@@ -353,32 +352,11 @@ const CategoryItem = ({ selectedCategory, cart, setCart }) => {
         id: 5,
         name: "Tilapia",
         image: "tilapia.jpeg",
-=======
-      { id: 1, name: "Tuna", image: "seafood1.png", price: "$7.99 per pound" },
-      { id: 2, name: "Cod", image: "seafood2.png", price: "$8.99 per pound" },
-      {
-        id: 3,
-        name: "Shrimp",
-        image: "seafood3.png",
-        price: "$9.99 per pound",
-      },
-      {
-        id: 4,
-        name: "Salmon",
-        image: "seafood4.png",
-        price: "$10.99 per pound",
-      },
-      {
-        id: 5,
-        name: "Tilapia",
-        image: "seafood5.png",
->>>>>>> refs/remotes/origin/main
         price: "$7.99 per pound",
       },
       {
         id: 6,
         name: "Mussels",
-<<<<<<< HEAD
         image: "mussels.jpeg",
         price: "$5.99 per pound",
       },
@@ -387,36 +365,18 @@ const CategoryItem = ({ selectedCategory, cart, setCart }) => {
         id: 8,
         name: "Lobster",
         image: "lobster.jpeg",
-=======
-        image: "seafood6.png",
-        price: "$5.99 per pound",
-      },
-      { id: 7, name: "Crab", image: "seafood7.png", price: "$12.99 per pound" },
-      {
-        id: 8,
-        name: "Lobster",
-        image: "seafood8.png",
->>>>>>> refs/remotes/origin/main
         price: "$16.99 per pound",
       },
       {
         id: 9,
         name: "Scallops",
-<<<<<<< HEAD
         image: "scallop.jpeg",
-=======
-        image: "seafood9.png",
->>>>>>> refs/remotes/origin/main
         price: "$13.99 per pound",
       },
       {
         id: 10,
         name: "Swordfish",
-<<<<<<< HEAD
         image: "swordfish.jpeg",
-=======
-        image: "seafood10.png",
->>>>>>> refs/remotes/origin/main
         price: "$11.99 per pound",
       },
     ],
