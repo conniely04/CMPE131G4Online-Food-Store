@@ -1,115 +1,192 @@
-import React, { useState } from 'react';
-import './Checkout.css';
+import React, { useState } from "react";
+import "./Checkout.css";
 
 function CheckoutPage() {
-  const [shippingInfo, setShippingInfo] = useState({
-    email_address: '',
-    home_address: '',
-    phone_number: '',
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    emailAddress: "",
+    phoneNumber: "",
+    street: "",
+    city: "",
+    country: "",
+    zip: "",
+    creditCardNumber: "",
+    creditCardName: "",
+    month: "",
+    year: "",
+    ccv: "",
+    saveDetails: false,
   });
 
-  const [paymentInfo, setPaymentInfo] = useState({
-    cardHolder: '',
-    cardNumber: '',
-    expirationDate: '',
-    cvv: '',
-  });
-
-  const handleShippingInfoChange = (e) => {
-    const { name, value } = e.target;
-    setShippingInfo((prevInfo) => ({
-      prevInfo,
-      [name]: value,
-    }));
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Implement order submission logic here
+    console.log("Order details:", formData);
   };
 
-  const handlePaymentInfoChange = (e) => {
-    const { name, value } = e.target;
-    setPaymentInfo((prevInfo) => ({
-      ...prevInfo,
-      [name]: value,
-    }));
-  };
-
-  const handlePlaceOrder = () => {
+  const handleInputChange = (event) => {
+    const { name, value, type } = event.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? event.target.checked : value,
+    });
   };
 
   return (
-    <div className="checkout">
-      <h2>Checkout</h2>
-
-      <div>
-        <h3>Basic Information</h3>
-        <form>
+    <div className="checkout-page">
+      <div className="basic-information">
+        <h2>Basic Information</h2>
+        <form className="checkout-form" onSubmit={handleSubmit}>
           <input
             type="text"
-            name="email_address"
-            value={shippingInfo.firstName}
-            onChange={handleShippingInfoChange}
+            name="firstName"
+            className="checkout-input"
+            placeholder="First Name"
+            value={formData.firstName}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            className="checkout-input"
+            placeholder="Last Name"
+            value={formData.lastName}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="text"
+            name="emailAddress"
+            className="checkout-input"
             placeholder="Email Address"
-            style={{width: '30%', marginRight: '10px'}}
+            value={formData.emailAddress}
+            onChange={handleInputChange}
+            required
           />
           <input
             type="text"
-            name="home_address"
-            value={shippingInfo.lastName}
-            onChange={handleShippingInfoChange}
-            placeholder="Home Address"
-            style={{width: '30%', marginRight: '10px'}}
-          />
-          <input
-            type="text"
-            name="phone_number"
-            value={shippingInfo.lastName}
-            onChange={handleShippingInfoChange}
+            name="phoneNumber"
+            className="checkout-input"
             placeholder="Phone Number"
-            style={{width: '30%', marginRight: '10px'}}
-          />
-          {/* Other shipping input fields go here */}
-        </form>
-      </div>
-
-      {/* Payment Information */}
-      <div>
-        <h3>Payment Information</h3>
-        <form>
-          <input
-            type="text"
-            name="cardHolder"
-            value={paymentInfo.cardHolder}
-            onChange={handlePaymentInfoChange}
-            placeholder="Card Holder"
-            style={{ textAlign: 'left', marginRight: '10px', width: '30%' }}
-          />
-          <input
-            type="text"
-            name="cardNumber"
-            value={paymentInfo.cardNumber}
-            onChange={handlePaymentInfoChange}
-            placeholder="Card Number (e.g. 1234-5678-9123-4567)"
-            style={{ textAlign: 'left', marginRight: '27px', width: '30%' }}
-          />
-          <input
-            type="text"
-            name="expirationDate"
-            value={paymentInfo.expirationDate}
-            onChange={handlePaymentInfoChange}
-            placeholder="Expiration Date"
-            style={{ textAlign: 'left', marginRight: '10px', width: '30%' }}
-          />
-          <input
-            type="text"
-            name="cvv"
-            value={paymentInfo.cvv}
-            onChange={handlePaymentInfoChange}
-            placeholder="CVC"
-            style={{ textAlign: 'left', marginRight: '27px', width: '10%' }}
+            value={formData.phoneNumber}
+            onChange={handleInputChange}
+            required
           />
         </form>
       </div>
-
-      {/* Place Order Button */}
-      <button onClick={handlePlaceOrder}>Place Order</button>
+      <div className="billing-address">
+        <h2>Billing Address</h2>
+        <form className="checkout-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="street"
+            className="checkout-input"
+            placeholder="Street"
+            value={formData.street}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="text"
+            name="city"
+            className="checkout-input"
+            placeholder="City"
+            value={formData.city}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="text"
+            name="country"
+            className="checkout-input"
+            placeholder="Country"
+            value={formData.country}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="text"
+            name="zip"
+            className="checkout-input"
+            placeholder="ZIP Code"
+            value={formData.zip}
+            onChange={handleInputChange}
+            required
+          />
+        </form>
+      </div>
+      <div className="payment-information">
+        <h2>Payment Information</h2>
+        <form className="checkout-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="creditCardNumber"
+            className="checkout-input"
+            placeholder="Credit Card Number"
+            value={formData.creditCardNumber}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="text"
+            name="creditCardName"
+            className="checkout-input"
+            placeholder="Credit Card Name"
+            value={formData.creditCardName}
+            onChange={handleInputChange}
+            required
+          />
+          <div className="expiration">
+            <input
+              type="text"
+              name="month"
+              className="checkout-input"
+              placeholder="MM"
+              value={formData.month}
+              onChange={handleInputChange}
+              required
+            />
+            <input
+              type="text"
+              name="year"
+              className="checkout-input"
+              placeholder="YY"
+              value={formData.year}
+              onChange={handleInputChange}
+              required
+            />
+            <input
+              type="text"
+              name="ccv"
+              className="checkout-input"
+              placeholder="CCV"
+              value={formData.ccv}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <label>
+            <input
+              type="checkbox"
+              name="saveDetails"
+              checked={formData.saveDetails}
+              onChange={handleInputChange}
+            />
+            Save payment details for future purchases
+          </label>
+        </form>
+      </div>
+      <div className="place-order">
+        <button
+          className="checkout-button"
+          type="submit"
+          onClick={handleSubmit}
+        >
+          Place Order
+        </button>
+      </div>
     </div>
   );
 }

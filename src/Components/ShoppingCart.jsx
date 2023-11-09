@@ -80,7 +80,7 @@ function ShoppingCart({ cart, removeFromCart }) {
       <div className="bottom-half">
         <div className="bottom-left">
           {cart.length === 0 ? (
-            <p>Your cart is empty</p>
+            <p> Your cart is empty</p>
           ) : (
             cart.map((item) => (
               <div key={item.id} className="cart-item">

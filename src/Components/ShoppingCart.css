@@ -120,18 +120,30 @@ html {
 }
 
 /* Summary Box Styling */
+/* Rounded edges and green border for the summary box */
 .summary-box {
   position: fixed;
   top: 154.5px;
   right: 0.3%;
   width: 33%;
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 0;
+  border: 1px solid rgb(4, 73, 39); /* Add a green border */
+  border-radius: 10px; /* Round out the edges */
   padding: 1%;
   text-align: center;
   z-index: 1;
 }
-.summary-box .checkout {
-  margin-right: 101px;
+
+/* Rounded edges for cart items and green border */
+.cart-item {
+  display: flex;
+  width: 60%;
+  border: 1px solid rgb(4, 73, 39); /* Add a green border */
+  background-color: #fff;
+  border-radius: 10px; /* Round out the edges */
+  margin: 0.5% 1px;
+  padding: 2%;
+  box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 0;
 }
