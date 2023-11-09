@@ -2,7 +2,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "../Components/Navbar.css";
 import "../Components/SideBar.css";
 import { useState } from "react";
-
+//add when u click on somewhere else menu closes
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -39,7 +39,7 @@ export default function Header() {
               <CustomLink className="contentin" to="/Login">
                 Login
               </CustomLink>
-              <CustomLink className="contentin" to="/Order">
+              <CustomLink className="contentin" to="/Tracking">
                 Orders
               </CustomLink>
               <CustomLink className="contentin" to="/About">

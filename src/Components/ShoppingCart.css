@@ -4,7 +4,9 @@ html {
   margin: 0;
   padding: 0;
 }
-
+.top_right {
+  z-index: 1000;
+}
 /* Position "Continue Shopping" and "Checkout" relative to cart items */
 .top-half {
   display: flex;
@@ -13,6 +15,7 @@ html {
   margin-top: 69px;
   margin-right: 0%;
   padding: 0 20px;
+  z-index: 1000;
 }
 .divider {
   margin-bottom: 0.5%;
@@ -32,6 +35,19 @@ html {
   font-size: 0.7em;
   text-align: center;
 }
+.checkout_right {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 8px;
+}
 
 .checkout {
   background-color: #000000;
@@ -44,6 +60,13 @@ html {
   font-size: 0.7em;
   text-align: center;
   margin-left: 100px;
+  z-index: 1000;
+  margin-right: 250px;
+}
+.checkout_right:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
 }
 
 .continue:hover {

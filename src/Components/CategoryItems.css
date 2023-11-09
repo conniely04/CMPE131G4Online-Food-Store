@@ -89,15 +89,16 @@
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 5px;
+
   padding-top: 1px; /* Add a small top padding */
 }
 
-.add-to-cart-button:hover{
+.add-to-cart-button:hover {
   background-color: #106f10; /* Green color for the add button */
   color: #fff;
 }
 
-.remove-from-cart-button:hover{
+.remove-from-cart-button:hover {
   background-color: #d9534f; /* Red color for the remove button */
   color: #fff;
 }

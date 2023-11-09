@@ -72,7 +72,7 @@ function ShoppingCart({ cart, removeFromCart }) {
         </div>
         <div className="top-right">
           <Link to="/Checkout">
-            <button className="checkout">Checkout</button>
+            <button className="checkout_right">Checkout</button>
           </Link>
         </div>
       </div>

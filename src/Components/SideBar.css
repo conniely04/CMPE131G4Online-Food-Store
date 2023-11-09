@@ -4,13 +4,12 @@
   height: 100%;
   position: fixed;
   top: 0;
-  z-index: 50;
+
   background-color: rgb(14, 74, 33);
   overflow-x: hidden;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  z-index: 1000;
 }
 
 .sidebar.open {
@@ -31,7 +30,6 @@
   padding-bottom: 18px;
 }
 .sidebar-toggle {
-  z-index: 1000;
   margin-right: 35px;
 
   position: fixed;
