@@ -1,0 +1,121 @@
+body {
+  font-family: serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  white-space: nowrap;
+}
+
+.top-bar {
+  background-color: #ffffff;
+  color: #005823;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-name {
+  font-size: 24px;
+}
+
+.sign-in-shopping-cart {
+  display: flex;
+  align-items: center;
+}
+
+.sign-in-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #005823;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shopping-cart-icon {
+  width: 60px; /* Adjust the size as needed */
+  margin-left: 20px; /* Add some spacing between the button and the cart icon */
+  cursor: pointer;
+  margin-top: 60px;
+}
+.shopping-cart-icon:hover {
+  transform: scale(1.2);
+}
+.loginbutton {
+  margin-top: 28px;
+}
+.loginbutton:hover {
+  transform: scale(1.1);
+}
+
+.search-bar {
+  flex: 1;
+  text-align: center;
+  margin-left: 60px;
+  border: none;
+}
+
+input[type="text"] {
+  font-family: "Cabin";
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+}
+.shopping-cart {
+  margin-left: auto;
+  /* Push the cart to the right */
+  padding-right: 75px;
+}
+.navigation-links {
+  display: flex;
+  align-items: center;
+  /* Align items vertically */
+  padding-right: 5px;
+}
+.navigation-links li {
+  margin-right: 5px; /* Adjust the spacing between links */
+}
+.navbar {
+  z-index: 2;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100%;
+  background-color: #5b7860;
+  color: rgb(14, 74, 33);
+  font-family: "Cabin";
+  display: flex;
+  position: fixed;
+  align-items: center;
+  height: 65px; /* Adjust the height as needed */
+  padding: 0 20px; /* Adjust the horizontal padding */
+}
+.logo {
+  padding-left: 26px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+ul {
+  padding-right: 30px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+li {
+  font-size: 18px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(144, 189, 158);
+  font-weight: bold;
+}

@@ -1,0 +1,309 @@
+/* Reset some default browser styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Position "Continue Shopping" and "Checkout" relative to cart items */
+.top-half {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 69px;
+  margin-right: 0%;
+  padding: 0 20px;
+}
+
+.top-center {
+  margin-right: -5%;
+}
+
+.continue {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.checkout {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.continue:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+.checkout:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Order Item Styling */
+.order-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(4, 73, 39); /* Add a green border */
+  background-color: #fff;
+  border-radius: 10px; /* Round out the edges */
+  margin: 0.5% 1px;
+  padding: 2%;
+  box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 1%;
+}
+
+.order-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Item Details Styling */
+.item-details {
+  width: 100%;
+}
+
+.item-details .item-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.item-details .item-price {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Item Actions Styling */
+.item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-actions input {
+  width: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  margin-right: 10px;
+}
+
+.item-actions button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.item-actions button:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Summary Box Styling */
+
+/* Position "Continue Shopping" and "Checkout" relative to cart items */
+.top-half {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 69px;
+  margin-right: 0%;
+  padding: 0 20px;
+}
+
+.top-center {
+  margin-right: -5%;
+}
+
+.continue {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.checkout {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.continue:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+.checkout:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Order Item Styling */
+.order-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid rgb(4, 73, 39); /* Add a green border */
+  background-color: #fff;
+  border-radius: 10px; /* Round out the edges */
+  margin: 0.5% 1px;
+  padding: 2%;
+  box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 1%;
+}
+
+.order-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Item Details Styling */
+.item-details {
+  width: 100%;
+}
+
+.item-details .item-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.item-details .item-price {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Item Actions Styling */
+.item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-actions input {
+  width: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  margin-right: 10px;
+}
+
+.item-actions button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.item-actions button:hover {
+  background-color: #4cb71e;
+  transform: scale(1.02);
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+/* Summary Box Styling (Removed for order summary) */
+
+/* Billing Information Styling */
+.billing-info {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+.billing-info label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.billing-info input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+/* Adjusting for small screens */
+@media (max-width: 50%) {
+  /* Adjust the zoom level for the entire page */
+  body,
+  html {
+    zoom: 0.5; /* Set the zoom level to 50% */
+  }
+
+  /* Reset specific styles that don't need to be scaled */
+  /* For example, reset the zoom on specific elements like buttons or certain text */
+  .continue,
+  .checkout,
+  .item-actions input,
+  .item-actions button {
+    transform: scale(2); /* Counteract the page zoom for these elements */
+  }
+}
+
+.summary-box .checkout {
+  margin-right: 101px;
+}
+
+@media (max-width: 50%) {
+  /* Adjust the zoom level for the entire page */
+  body,
+  html {
+    zoom: 0.5; /* Set the zoom level to 50% */
+  }
+
+  /* Reset specific styles that don't need to be scaled */
+  /* For example, reset the zoom on specific elements like buttons or certain text */
+  .continue,
+  .checkout,
+  .item-actions input,
+  .item-actions button {
+    transform: scale(2); /* Counteract the page zoom for these elements */
+  }
+}
