@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
-    margin-bottom: 0; /* Remove vertical margin for spacing between sections and icons */
+    margin-bottom: 15px; /* Remove vertical margin for spacing between sections and icons */
   }
   
   .title {
@@ -38,17 +38,20 @@
     color: #ffffff;
     font-size: 15px;
     margin: 0 10px;
+    margin-bottom: 15px; 
   }
+
   
-  .social-icons {
-    display: flex;
-    align-items: center;
-    margin: 0; /* Remove horizontal margin for spacing between links */
-  }
-  
-  .social-link {
+  .social-icon {
+    width: 30px; /* Adjust this value to scale the size of your image */
+    height: auto; /* This will keep the aspect ratio intact */
+    margin-top: 20px; /* Adjust this value to control space between the title and the icons */
     color: #ffffff;
-    font-size: 14px;
-    margin: 0 10px;
+    margin: 0 2px;
+  }
+
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* Optional: makes the icon slightly larger when hovering over it */
   }
   
