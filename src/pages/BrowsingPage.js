@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Components/CategoryItems.css";
-import Header from "../Components/Header"; // Correct import path
 import CategoryItem from "../Components/CategoryItems"; // Correct import path
+import Footer from '../Components/Footer'; // Import the Banner component
 
 const BrowsingPage = () => {
   const [cart, setCart] = useState([]);
@@ -81,8 +81,11 @@ const BrowsingPage = () => {
       <CategoryItem
         selectedCategory={selectedCategory}
         cart={cart}
-        setCart={setCart}
-      />
+        setCart={setCart}/>
+
+        <div className="ending-line"></div>
+      
+      <Footer /> {/* Render the Banner component */}
     </div>
   );
 };
