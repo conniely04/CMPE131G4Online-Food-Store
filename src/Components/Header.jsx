@@ -18,7 +18,14 @@ export default function Header() {
   </html>;
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">
+      <CustomLink to="/"> 
+                <img
+                  src="/images/logo5.png"
+                  alt="Home Page"
+                  className="logo"
+                />
+      </CustomLink>
+      <Link to="/" className="store-name">
         Online Food Store
       </Link>
       <div className="search-bar">
