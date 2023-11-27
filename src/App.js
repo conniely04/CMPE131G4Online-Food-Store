@@ -11,7 +11,7 @@ import LoginPage from "./pages/LoginPage";
 import Broccoli from "./pages/Broccoli";
 import Banana from "./pages/Banana";
 import Carrot from "./pages/Carrot";
-import Checkout from "./Components/Checkout";
+import Checkout from "./pages/Checkout";
 import "./Components/Navbar.css";
 import BrowsingPage from "./pages/BrowsingPage";
 import "./BrowsingPage.css";
